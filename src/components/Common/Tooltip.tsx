@@ -18,7 +18,6 @@ const Tooltip: React.FC<TooltipProps> = ({
   marginClass,
   layOutClassName,
 }) => {
-  const [visible, setVisible] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 

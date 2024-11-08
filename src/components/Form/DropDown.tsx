@@ -9,7 +9,7 @@ interface DropdownProps {
   className?: string; // Optional additional classes for styling
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ options, placeholder = 'Select an option', onSelect, className = '' }) => {
+const Dropdown: React.FC<DropdownProps> = ({ options, placeholder = 'Select an option', className = '' }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState<string | null>('채용');
   const dropdownRef = useRef<HTMLDivElement>(null);

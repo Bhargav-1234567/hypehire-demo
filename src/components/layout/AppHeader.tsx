@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import logo from '../../../public/logo.svg';
 import Image from 'next/image';
 import Dropdown from '../Form/DropDown';
@@ -15,7 +14,7 @@ interface HeaderProps {
   className?: string; // Custom CSS class for styling
 }
 
-const AppHeader: React.FC<HeaderProps> = ({ title, links = [], className = '' }) => {
+const AppHeader: React.FC<HeaderProps> = ({ title, className = '' }) => {
   return (
     <header className={`flex items-center justify-between bg-transparent text-white py-4 ${className}`}>
       <h1 className="text-2xl font-bold flex gap-1">
