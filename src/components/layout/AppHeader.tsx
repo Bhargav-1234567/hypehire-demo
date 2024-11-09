@@ -3,6 +3,8 @@ import logo from '../../../public/logo.svg';
 import Image from 'next/image';
 import Dropdown from '../Form/DropDown';
 import Button from '../Form/Button';
+import HemMenu from '../Mobile/HemMenu';
+
 interface NavLink {
   label: string; // Display text for the link
   href: string; // Destination URL
@@ -33,7 +35,8 @@ const AppHeader: React.FC<HeaderProps> = ({ title, className = '' }) => {
         />
         <span>해외 개발자 활용 서비스</span>
       </div>
-      <Button label="문의하기" />
+      <Button label="문의하기" className="md:block hidden" />
+      <HemMenu />
     </header>
   );
 };
